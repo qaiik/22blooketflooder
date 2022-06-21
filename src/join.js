@@ -60,7 +60,7 @@ async function join(id,name,blook) {
             referrerPolicy: "no-referrer",
             method: "put",
             credentials: "include",
-            body: await encodeValues({
+            body: await encoder({
                     path: `c/${name}`,
                     value: {
                         b: blook
